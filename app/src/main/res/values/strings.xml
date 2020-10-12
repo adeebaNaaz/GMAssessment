@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">GMAssessment</string>
+    <string name="author_name">Author Name: </string>
+    <string name="commit_hash">Commit hash: </string>
+    <string name="commit_message">Commit message: </string>
 </resources>

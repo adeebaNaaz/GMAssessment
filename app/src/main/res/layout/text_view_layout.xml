@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/author_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/author_name"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/author_name"
+        android:layout_toEndOf="@id/author_name"
+        android:padding="5dp"
+        android:textSize="15sp"
+        tools:text="testName" />
+
+    <TextView
+        android:id="@+id/commit_hash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/author_name"
+        android:padding="5dp"
+        android:text="@string/commit_hash"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/commit_hash"
+        android:layout_toEndOf="@id/commit_hash"
+        android:padding="5dp"
+        android:text="@string/commit_hash"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/commit_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/commit_hash"
+        android:padding="5dp"
+        android:text="@string/commit_message"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_alignBaseline="@id/commit_message"
+        android:layout_toEndOf="@id/commit_message"
+        android:padding="5dp"
+        android:text="@string/commit_message"
+        android:textSize="15sp" />
+
+</RelativeLayout>
